@@ -1,0 +1,434 @@
+/* Custom CSS for Grumpy Cat website */
+body {
+	  font-family: 'Chicle', cursive!important;
+	  background: #ebc548;
+	  max-width: 100vw;
+	  overflow-x: hidden;
+}
+
+.fixed-top {
+  position: fixed!important;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.navbar {
+  background-color: #ebc548;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.navbar-brand {
+  font-family: 'Chicle', cursive;
+  font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar-nav .btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+section {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+/* Home Section */
+#home {
+  min-height: 100vh;
+  background-image: url('../images/binance-cat-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* About Section */
+#about img {
+  max-width: 100%;
+}
+
+/* Tokenomics Section */
+#tokenomics ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Roadmap Section */
+#roadmap .card {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+#roadmap .card-body {
+  text-align: center;
+}
+
+#roadmap .card-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#roadmap .card-body ul li {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+}
+
+/* Utility Classes */
+.text-muted {
+  color: #aaa;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* Twitter Button */
+.btn-twitter {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+  color: #fff;
+}
+
+.btn-twitter:hover {
+  background-color: #0C8FF6;
+  border-color: #0C8FF6;
+}
+
+/* Telegram Button */
+.btn-telegram {
+  background-color: #27A9E1;
+  border-color: #27A9E1;
+  color: #fff;
+}
+
+.btn-telegram:hover {
+  background-color: #2095C8;
+  border-color: #2095C8;
+}
+
+/* DexTools Button */
+.btn-dextools {
+  background-color: #424242;
+  border-color: #424242;
+  color: #fff;
+}
+
+.btn-dextools:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+/* Uniswap Button */
+.btn-uniswap {
+  background-color: #1C1D1F;
+  border-color: #1C1D1F;
+  color: #fff;
+}
+
+.btn-uniswap:hover {
+  background-color: #0D0E10;
+  border-color: #0D0E10;
+}
+
+/* Etherscan Button */
+.btn-etherscan {
+  background-color: #7E8FA4;
+  border-color: #7E8FA4;
+  color: #fff;
+}
+
+.btn-etherscan:hover {
+  background-color: #6E7C8F;
+  border-color: #6E7C8F;
+}
+
+.btn-lg i {
+  margin-right: 10px;
+}
+
+.btn-block {
+  border-radius: 50px;
+}
+.binancepattern {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .05;
+	background:url("../img/binancepattern2.png");
+	background-repeat: repeat-x; 
+	z-index: -1;
+}
+
+.binancepattern2 {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .05;
+	background:url("../img/binancepattern.png");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center top;
+	z-index: -1;
+}
+.binancepattern3 {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .1;
+	background:url("../img/binancepattern2.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center top;
+	z-index: -1;
+}
+
+.throne {
+	max-height: 500px;
+}
+.car {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100vw;
+  height: 400px;
+}
+
+.car img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  animation-name: car-move;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes car-move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn-buy-now {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-buy-now::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease-out;
+}
+
+.btn-buy-now:hover {
+  background-color: #fbbd07;
+}
+
+.btn-buy-now:hover::before {
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+}
+
+.pepe {
+	position: absolute;
+	top: 320px;
+	right: 230px;
+	height: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+	.pepe {
+	position: absolute;
+	top: 320px;
+	right: 10px;
+	height: 140px;
+}
+body, html {
+width: 100vw!important;
+overflow-x: hidden!important;
+}
+	
+
+.display-2 {
+	font-size: 32px!important;
+	margin-bottom: -20px;
+}
+
+.car img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 70%;
+  animation-name: car-move;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes car-move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+
+.end {
+	max-width:100px;
+	 transform: translateY(-50%);
+  animation: moveUpDown 10s ease-in-out infinite;
+}
+
+.coin-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  overflow: hidden;
+}
+
+.coin {
+  position: absolute;
+  top: -300px;
+  z-index: -1;
+  width: 40px;
+  animation: fall 5s linear infinite;
+}
+
+.coin:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.coin:nth-child(2) {
+  left: 20%;
+  animation-delay: 0.5s;
+}
+
+.coin:nth-child(3) {
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.coin:nth-child(4) {
+  left: 40%;
+  animation-delay: 1.5s;
+}
+
+.coin:nth-child(5) {
+  left: 50%;
+  animation-delay: 2s;
+}
+
+.coin:nth-child(6) {
+  left: 60%;
+  animation-delay: 2.5s;
+}
+
+.coin:nth-child(7) {
+  left: 70%;
+  animation-delay: 3s;
+}
+
+.coin:nth-child(8) {
+  left: 80%;
+  animation-delay: 3.5s;
+}
+
+.coin:nth-child(9) {
+  left: 90%;
+  animation-delay: 4s;
+}
+
+.coin:nth-child(10) {
+  left: 100%;
+  animation-delay: 4.5s;
+}
+
+@keyframes fall {
+  0% {
+	  opacity: 0;
+    top: -100px;
+  }
+   50% {
+	      opacity:1;
+   }
+  100% {
+	   opacity:0;
+    top: 100%;
+  }
+}
+
+.binancelogo {
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+
+.binancelogo:hover {
+	
+	transform: rotateY(180deg);
+}
+	
